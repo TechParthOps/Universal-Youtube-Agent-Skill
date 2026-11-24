@@ -1,0 +1,20 @@
+include README.md LICENSE CHANGELOG.md ARCHITECTURE.md DEVELOPMENT_ROADMAP.md
+include VOICEDNA_ARCHITECTURE.md VOICE_MODEL_COMPARISON.md VOICE_SECURITY.md VOICE_CONSENT_POLICY.md
+include VOICE_API_CONTRACT.md VOICE_TEST_REPORT.md VOICE_BENCHMARKS.md
+include VOICE_ARTIFACT_MANIFEST_SCHEMA.md VOICE_MODEL_EVALUATION.md
+include THIRD-PARTY-NOTICES.md ALPHA_RELEASE_NOTES.md
+include MANIFEST.in pyproject.toml
+
+recursive-include docs *.md *.txt
+recursive-include skill *.md *.py *.json
+recursive-include web *.html *.js *.css *.json
+recursive-include examples *.json *.md *.txt
+recursive-include scripts *.py
+exclude docs/DEVELOPMENT_LOG.md
+global-exclude __pycache__ *.py[cod] *.pyo .DS_Store Thumbs.db
+prune .git
+prune .pytest_cache
+prune .ruff_cache
+prune dist
+prune build
+prune tests

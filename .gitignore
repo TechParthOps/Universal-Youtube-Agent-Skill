@@ -1,0 +1,43 @@
+# Runtime state / creator workspaces
+.creator/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling artifacts
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local editor / OS
+.vscode/
+.idea/
+Thumbs.db
+*.tmp
+# Development tests - excluded from public repository
+/tests/
+# Development and acceptance reports
+DOCUMENTATION_AUDIT.md
+FINAL_*_AUDIT.md
+FINAL_*_ACCEPTANCE.md
+FINAL_*_VERIFICATION.md
+POST_RELEASE_AUDIT.md
+RELEASE_READINESS_REPORT.md
+RELEASE_VERIFICATION.md
+REMAINING_RISKS.md
+RISK_REGISTER.md
+TEST_STRATEGY.md
+TEST_VERIFICATION.md
+PROGRESS.md
+SECURITY_AUDIT.md
+# Internal development records
+/docs/DEVELOPMENT_LOG.md

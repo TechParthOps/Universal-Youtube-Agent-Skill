@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Creator Preview Workspace</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Creator Preview <small id="project-label">—</small></h1>
+    <div class="toolbar">
+      <label>Version <select id="version-select"></select></label>
+      <label>Render <select id="render-select"></select></label>
+      <button id="reload-btn" type="button">Reload</button>
+      <button id="render-btn" type="button" class="primary">Render version</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="players">
+      <div class="player">
+        <h2>Edited output</h2>
+        <video id="edited" controls playsinline preload="metadata"></video>
+      </div>
+      <div class="player">
+        <h2>Original (A/B compare)</h2>
+        <video id="source" controls playsinline preload="metadata"></video>
+        <small>Source playhead follows the edited playhead scaled to source time.</small>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Timeline</h2>
+      <div id="timeline" class="timeline" aria-label="edit timeline"></div>
+      <p class="legend">
+        <span class="swatch clip"></span> kept clip
+        <span class="swatch removed"></span> removed (restorable)
+        <span class="swatch marker"></span> signal-backed moment
+        <span class="swatch caption"></span> caption cue
+      </p>
+    </section>
+
+    <section class="columns">
+      <div class="panel">
+        <h2>Revision request</h2>
+        <p class="hint">Requests are parsed into an explicit EDL diff. Ambiguous requests are
+          returned as questions — nothing is applied silently.</p>
+        <textarea id="revision-text" rows="3" placeholder="e.g. make the first 20s more exciting"></textarea>
+        <div class="presets" id="presets"></div>
+        <button id="revise-btn" type="button">Parse revision → pending</button>
+        <pre id="revision-result" class="result" hidden></pre>
+      </div>
+      <div class="panel">
+        <h2>QA &amp; decisions</h2>
+        <div id="qa"></div>
+        <h3>Editing decisions</h3>
+        <ol id="decisions"></ol>
+      </div>
+      <div class="panel">
+        <h2>Pending revisions &amp; exports</h2>
+        <h3>Pending</h3>
+        <ul id="pending"></ul>
+        <h3>Exports</h3>
+        <ul id="exports"></ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

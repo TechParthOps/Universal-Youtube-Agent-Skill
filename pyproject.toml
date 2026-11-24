@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-creator-agent"
+version = "0.10.0a0"
+description = "Local-first YouTube creator toolkit and agent skill for footage analysis, video editing, rendering, preview, revision, and export; optional approval-gated YouTube integration."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Universal YouTube Creator Agent contributors" }]
+keywords = ["youtube", "video-editing", "ffmpeg", "ai-agents", "skills"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = [
+  "requests>=2.31",
+]
+
+[project.scripts]
+creator = "creator_core.cli.main:main"
+
+[project.optional-dependencies]
+transcribe = ["faster-whisper>=1.0"]
+youtube = [
+  "google-api-python-client>=2.100",
+  "google-auth-oauthlib>=1.1",
+  "google-auth-httplib2>=0.2",
+  "keyring>=24",
+]
+diarize = ["pyannote.audio>=3.1"]
+# Optional neural inference runtime. Upstream OpenVoice v2 has no reliable PyPI package and must
+# be installed from its MIT-licensed source after this extra; Chatterbox is published as
+# `chatterbox-tts`. No checkpoint is downloaded by this project — see VOICE_MODEL_EVALUATION.md.
+voice-neural = ["torch>=2.0", "torchaudio>=2.0", "chatterbox-tts>=0.5"]
+build = ["build>=1.2"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]

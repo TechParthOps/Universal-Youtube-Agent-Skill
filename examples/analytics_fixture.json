@@ -1,0 +1,33 @@
+{
+  "retrieved_at": "2026-11-01T09:00:00Z",
+  "start_date": "2026-10-01",
+  "end_date": "2026-10-31",
+  "note": "Local example data. These numbers are illustrative, not verified channel performance.",
+  "reports": [
+    {
+      "columnHeaders": [
+        {"name": "video", "columnType": "DIMENSION", "dataType": "STRING"},
+        {"name": "views", "columnType": "METRIC", "dataType": "INTEGER"},
+        {"name": "impressions", "columnType": "METRIC", "dataType": "INTEGER"},
+        {"name": "impressionsClickThroughRate", "columnType": "METRIC", "dataType": "FLOAT"},
+        {"name": "averageViewDuration", "columnType": "METRIC", "dataType": "FLOAT"},
+        {"name": "averageViewPercentage", "columnType": "METRIC", "dataType": "FLOAT"},
+        {"name": "estimatedMinutesWatched", "columnType": "METRIC", "dataType": "FLOAT"},
+        {"name": "subscribersGained", "columnType": "METRIC", "dataType": "INTEGER"},
+        {"name": "likes", "columnType": "METRIC", "dataType": "INTEGER"},
+        {"name": "comments", "columnType": "METRIC", "dataType": "INTEGER"},
+        {"name": "shares", "columnType": "METRIC", "dataType": "INTEGER"}
+      ],
+      "data": {
+        "rows": [
+          ["vid_001", 32000, 420000, 0.076, 310, 62, 95000, 210, 1800, 210, 90],
+          ["vid_002", 14000, 210000, 0.052, 240, 48, 39000, 95, 760, 90, 30],
+          ["vid_003", 9000, 120000, 0.038, 180, 39, 17000, 40, 420, 50, 12],
+          ["vid_004", 8000, 110000, 0.035, 165, 36, 14000, 30, 380, 42, 10],
+          ["vid_005", 6500, 90000, 0.031, 150, 33, 10500, 22, 300, 35, 8],
+          ["vid_006", 5000, 70000, 0.028, 130, 29, 8000, 15, 220, 25, 5]
+        ]
+      }
+    }
+  ]
+}

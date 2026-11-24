@@ -1,0 +1,10 @@
+{
+  "retrieved_at": "2026-11-01T00:00:00Z",
+  "topics": [
+    {"name": "boss rush challenge", "signal": 8.4, "source_url": "https://example.invalid/trends/boss-rush", "observed_at": "2026-10-30T00:00:00Z"},
+    {"name": "speedrun tricks", "signal": 6.5, "source_url": "https://example.invalid/trends/speedrun", "observed_at": "2026-10-30T00:00:00Z"},
+    {"name": "indie horror", "signal": 5.2, "source_url": "https://example.invalid/trends/indie-horror", "observed_at": "2026-10-30T00:00:00Z"},
+    {"name": "game lore explained", "signal": 4.1, "source_url": "https://example.invalid/trends/lore", "observed_at": "2026-10-30T00:00:00Z"},
+    {"name": "one more try", "signal": 3.0, "source_url": "https://example.invalid/trends/one-more-try", "observed_at": "2026-10-30T00:00:00Z"}
+  ]
+}

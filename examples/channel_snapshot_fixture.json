@@ -1,0 +1,16 @@
+{
+  "retrieved_at": "2026-11-01T00:00:00Z",
+  "channel": {
+    "id": "UC_example_fixture",
+    "title": "Example Gaming Channel",
+    "description": "Boss fights, indie horror, and commentary.",
+    "subscribers": 24000
+  },
+  "videos": [
+    {"id": "vid_001", "title": "I beat the final boss with a broken sword", "views": 52000, "duration_seconds": 912, "published_at": "2026-10-20T00:00:00Z", "tags": ["souls", "boss"]},
+    {"id": "vid_002", "title": "Every boss fight ranked (worst to best)", "views": 81000, "duration_seconds": 1245, "published_at": "2026-10-12T00:00:00Z", "tags": ["ranking", "boss"]},
+    {"id": "vid_003", "title": "This indie horror game broke me", "views": 12000, "duration_seconds": 640, "published_at": "2026-10-05T00:00:00Z", "tags": ["horror", "indie"]},
+    {"id": "vid_004", "title": "One more try: the hardest boss in the game", "views": 19000, "duration_seconds": 780, "published_at": "2026-09-28T00:00:00Z", "tags": ["boss", "souls"]},
+    {"id": "vid_005", "title": "Speedrun tricks nobody tells you", "views": 8000, "duration_seconds": 430, "published_at": "2026-09-20T00:00:00Z", "tags": ["speedrun", "tricks"]}
+  ]
+}

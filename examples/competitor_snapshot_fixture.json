@@ -1,0 +1,15 @@
+{
+  "channel": {
+    "id": "UC_competitor_fixture",
+    "title": "Fixture Competitor Channel",
+    "description": "Boss fights, rankings and horror games (local fixture, not scraped).",
+    "subscribers": 50000
+  },
+  "videos": [
+    {"id": "comp_001", "title": "Every final boss ranked by difficulty", "views": 210000, "duration_seconds": 1100, "published_at": "2026-10-19T00:00:00Z", "tags": ["boss", "ranking"]},
+    {"id": "comp_002", "title": "Speedrun tricks for beginners", "views": 150000, "duration_seconds": 700, "published_at": "2026-10-11T00:00:00Z", "tags": ["speedrun", "tricks"]},
+    {"id": "comp_003", "title": "The secret lore behind this indie horror game", "views": 98000, "duration_seconds": 950, "published_at": "2026-10-02T00:00:00Z", "tags": ["lore", "horror"]},
+    {"id": "comp_004", "title": "Boss rush challenge: no damage runs", "views": 175000, "duration_seconds": 1400, "published_at": "2026-09-25T00:00:00Z", "tags": ["boss", "challenge"]},
+    {"id": "comp_005", "title": "How to beat the hardest boss with a broken sword", "views": 132000, "duration_seconds": 820, "published_at": "2026-09-18T00:00:00Z", "tags": ["boss", "guide"]}
+  ]
+}

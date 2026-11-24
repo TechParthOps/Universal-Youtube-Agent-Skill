@@ -1,0 +1,48 @@
+{
+  "channel": {
+    "name": "Example Gaming Channel",
+    "handle": "@examplegaming",
+    "niche": "gaming",
+    "sub_niches": ["souls-like boss fights", "indie horror"],
+    "category": "gaming",
+    "channel_id": "",
+    "subscribers": 0
+  },
+  "audience": {
+    "description": "Returning viewers who enjoy difficult boss fights and dry humor.",
+    "age_range": "18-34",
+    "interests": ["souls-like games", "speedrunning", "game lore"],
+    "language": "en"
+  },
+  "content": {
+    "formats": ["long_form", "shorts"],
+    "categories": ["boss fights", "gameplay commentary", "guides"],
+    "series": ["Boss Rush"]
+  },
+  "voice": {
+    "personality": ["dry humor", "calm under pressure"],
+    "speaking_style": "conversational, quick reactions, minimal jargon",
+    "signature_phrases": ["one more try", "that was clean"]
+  },
+  "editing": {
+    "pacing": "fast",
+    "captions": "on",
+    "transitions": "cut",
+    "zoom": "subtle",
+    "music": "low",
+    "sound_effects": true,
+    "avg_clip_seconds": 5.0,
+    "preferred_aspect": "16:9"
+  },
+  "branding": {
+    "colors": ["#101820", "#E84A5F"],
+    "font": "Inter",
+    "logo_path": null,
+    "intro_text": "Example Gaming Channel"
+  },
+  "publishing": {
+    "timezone": "America/New_York",
+    "preferred_days": ["friday", "sunday"],
+    "preferred_hours_utc": [20, 23]
+  }
+}
